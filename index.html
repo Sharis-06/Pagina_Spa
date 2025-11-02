@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de la página web">
+    <title>Tarea5_Spa</title>
+    <link rel="stylesheet" href="estyle.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+</head>
+<body>
+    
+    <div class="cabecera_nav">
+        <div class="nav_1 ancho centrar">
+            <div class="logo_1">
+                <img src="imagenes/logocabecera.jpg" alt=logo_spa">
+            </div>
+
+            <div class="redes">
+                <a href="#"><img src="imagenes/icono_facebook.jpg" alt="facebook"></a>
+                <a href="#"><img src="imagenes/icono_instagram.jpg" alt="instagram"></a>
+                <a href="#"><img src="imagenes/icono_twitter.jpg" alt="twitter"></a>
+            </div>
+        </div>
+
+        <div class="nav_2 ancho centrar">
+            <div class="enlace">
+                <a href="#">GALERIA</a>
+            </div>
+
+            <div class="enlace">
+                <a href="#">PRECIOS</a>
+            </div>
+
+            <div class="enlace">
+                <a href="#">CONTACTANOS</a>
+            </div>
+
+            <div class="enlace">
+                <a href="#">EQUIPO</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado2 centrar">
+      <div class="texto">
+        <h2>PROMOCIONES DE MARZO</h2>
+
+        <p>Se acerca la epoca de playa y por eso preparamos estas dos <br> promociones ideales para ti.</p>
+        
+        <div class="botones">
+          <a href="#" class="btn_1">Solicitar Promoción</a>
+          <a href="#" class="btn_2">ver Video</a>
+        </div>
+      </div>
+    </div>
+
+  <div class="apartado3">
+    <div class="ancho">
+      
+      <div class="entrada1_texto">
+        <h2>Los productos Science of Beauty</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam hic libero fugit voluptatibus, blanditiis odit, tenetur vero similique ex reiciendis quasi dignissimos beatae quos voluptas adipisci perferendis modi. Ut a aliquam harum nemo cupiditate suscipit veniam quis neque illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="entrada1_img">
+        <img src="imagenes/fotovelas.jpg" alt="Velas">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="apartado4">
+    <div class="ancho">
+      <h2 class="titulo centrar">Buscamos talento para integrarlos a nuestro equipo</h2>
+  
+      <div class="apartado4_img">
+        <img src="imagenes/fotoaromatizante.jpg" alt="Aromatizantes">
+      </div>
+  
+      <div class="apartado4_textos">
+  
+        <h3>Puesto de trabajo para Recepcionista</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos consequatur ut? Ratione qui quis sapiente dicta esse magni placeat non maxime voluptas nobis porro earum obcaecati, vel, nihil ut.</p>
+        <br>
+        <h3>Puesto de trabajo para Masajista</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam debitis, voluptas quasi rem ipsa sit. Quae aliquid perferendis obcaecati iusto rerum tempora nobis beatae, animi laborum, soluta veniam dolor! Repellendus.</p>
+        <br>
+        <h3>Puesto de trabajo para Nutriologo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique, minima quos maiores quisquam ipsam corporis incidunt ad voluptates beatae officiis aspernatur ipsum possimus deleniti numquam. Voluptas velit eos harum.</p>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="apartado5">
+    <div class="ancho">
+      <div class="formulario">
+        
+        <h2>Recibe noticias y promociones <br> de SPA SALON </h2>
+        <p>Un lugar para consentirte de pies a cabeza <br>Servicio de salón estética y Spa personalizado</p>
+
+        <p><span class="rosa">TELEFONO:</span> 999 420 8871</p>
+        <p><span class="rosa">CORREO:</span> info@spasalon.com</p>
+
+        <form action="#" method="get" id="Formularioo">
+          <label for="">Tu dirección de correo electrónico</label>
+          <br>
+          <input type="email" name="correo" id="correo" placeholder="*tunombre@example.com" required>
+          <br>
+          <button type="button" id="btn_enviar">Enviar</button>
+        </form>
+      </div>
+
+      <div class="apartado5_video">
+        <h2>Nuestas Instalaciones</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w4qaODLR_Xg?si=43dg0FlyOum1wfea&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="ancho">
+      <div class="footer_img">
+        <img src="imagenes/logo_spa.png" alt="SPA SALON">
+      </div>
+
+      <div class="footer_info">
+        <p>Hermione Sharis Pech Poot</p>
+        <p>Programación Web</p>
+        <p>7SA</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('#btn_enviar').click(
+      function(){
+        if($("#correo").val().trim() == "") {
+          alert("Tu email no puede estar vacio");
+          $("#correo").focus();
+          return 0;
+        } else if(!$("#correo")[0].checkValidity()) {
+          alert("Escribe un email valido");
+          $("#correo").focus();
+          return 0;
+        }
+          document.getElementById("#Formularioo").submit();
+      }
+    )
+  </script>
+</body>
+</html>

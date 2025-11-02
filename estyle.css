@@ -1,0 +1,248 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  
+}
+
+.margen {
+  padding: 15px;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.centrar {
+  text-align: center;
+}
+
+.cabecera_nav{
+  border-top: 20px solid #ff3281;
+  margin-bottom: 10px;
+}
+
+.logo_1{
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.redes{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: 48%;
+}
+
+.redes a{
+margin-right: 20px;
+}
+
+.nav_2{
+  border: 3px black solid;
+  padding: 10px;
+}
+.enlace{
+  width: 20%;
+  display: inline-block;
+  margin: 0 27px;
+}
+
+.enlace a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+
+.apartado2{
+  background-image:url(imagenes/fondopiedras.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 528px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto{
+  color: white;
+  /* font-weight: bold; */
+}
+
+.texto h2{
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.texto p{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.texto a{
+  text-decoration: none;
+  color: white;
+}
+
+.botones{
+  margin-top: 60px;
+}
+
+.btn_1{
+  background-color: #ff3281;
+  padding: 20px 30px;
+  margin-right: 30px;
+
+}
+
+.btn_2{
+  border: 2px #ff3281 solid;
+  padding: 20px;
+}
+.apartado3{
+  margin-top: 20px;
+}
+
+.entrada1_texto{
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 2;
+}
+
+.entrada1_texto h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.entrada1_img{
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+
+}
+
+.titulo{
+  margin-bottom: 20px;
+}
+.apartado4_img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%;
+}
+
+.apartado4_img img{
+  border-radius: 8px;
+  width: 550px;
+}
+
+.apartado4_textos{
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%;
+}
+
+.apartado5{
+  padding-top: 30px;
+}
+
+.formulario{
+  width: 49%;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.formulario h2{
+  font-size: 34px;
+  line-height: 1;
+}
+
+.formulario p{
+  margin-bottom: 15px;
+}
+
+.rosa{
+  color: #ff3281;
+  font-weight: bold;
+}
+
+.formulario form{
+  width: 86%;
+  border: 3px #ff3281 solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.formulario label{
+  font-weight: bold;
+}
+
+.formulario input{
+  width: 90%;
+  border: 1px #646464 solid;
+  border-radius: 5px;
+  margin: 10px 0;
+  height: 40px;
+}
+
+.formulario button{
+  padding: 10px 60px ;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border: 0;
+}
+
+.apartado5_video{
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.apartado5_video h2{
+  font-size: 34px;
+  margin-bottom: 75px;
+}
+
+.apartado5_video iframe{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.footer{
+  padding: 30px;
+  border-bottom: 20px #ff3281 solid;
+}
+
+.footer_img{
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer_info{
+  width: 49%;
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer_info p{
+  font-size: 20px;
+  color: #ff3281;
+  font-weight: bold;
+}
